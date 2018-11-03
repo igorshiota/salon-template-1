@@ -251,18 +251,14 @@
 			<h1 class="title title-cta">Like what you see?
 				<span>Then what are you waiting for?</span>
 			</h1>
-				<form action="">
-					<label for="name"></label>
-					<input type="text" placeholder="Your name"><br>
-					<label for="email"></label>
-					<input type="text" placeholder="Your email"><br>
-					<label for="phone"></label>
-					<input type="text" placeholder="Your phone"><br>
-					<label for="message"></label><br>
-					<textarea name="" id="" cols="30" rows="10" placeholder="Your message"></textarea>
+				<form method="post" action="contact-form.php">				
+					<input type="text" placeholder="Your name" required><br>					
+					<input type="email" placeholder="Your email" required><br>				
+					<input type="text" placeholder="Your phone"><br>					
+					<textarea name="" id="" cols="30" rows="10" placeholder="Your message" required></textarea><br>
+					<button type="submit" name="submit" class="button button-dark">Send Message!</button>
+					<a href="" class="button button-dark">Call Us Now!</a>
 				</form>
-			<a href="" class="button button-dark">Send Message!</a> <strong>or</strong>
-			<a href="" class="button button-dark">Call Us Now!</a>
 		</div>
 	</section>	
 	<!-- End Contact -->

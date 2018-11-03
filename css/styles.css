@@ -136,6 +136,7 @@ p {
 	border-width: 2px;
 	border-style: solid;
 	padding: .5em 1.75em;
+	background-color: transparent;
 }
 
 @media (min-width: 60rem) {
@@ -146,7 +147,6 @@ p {
 
 @media (max-width: 768px){
 	.button-dark {
-		width:30%;
 		font-size:14px;
 	}
 }
@@ -333,7 +333,7 @@ nav a:focus {
 	color: #1c1c1e;
 }
 
-input[type=text], textarea{
+input[type=text], input[type=email], textarea{
 	margin: .5em;
 	padding: 1em;
 	width: 50%;
@@ -341,7 +341,7 @@ input[type=text], textarea{
 }
 
 @media(max-width: 768px){
-	input[type=text], textarea{
+	input[type=text], input[type=email], textarea{
 		margin: .3em;
 		padding: 1em;
 		width: 80%;
