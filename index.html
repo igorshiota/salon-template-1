@@ -10,7 +10,7 @@
 	
 	<!-- below is my own css and js -->
 	<link rel="stylesheet" href="css/styles.css">
-	<script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+	<script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
 
 	<!-- below is for the carousel -->
 	<link rel="stylesheet" href="C:\Users\Igor\Desktop\Igor\Java\MyProjects\Portfolio Revamp - PHP - Website 2 (Salon Template 1)\OwlCarousel2-2.3.4\dist\assets\owl.carousel.css">
@@ -27,7 +27,7 @@
 				<li><a href="#about">About</a></li>
 				<li><a href="#team">Meet the Team</a></li>
 				<li><a href="#services">Services</a></li>
-				<li><a href="#services">Gallery</a></li>
+				<li><a href="#gallery">Gallery</a></li>
 				<li><a href="#contact">Contact</a></li><br>
 				<li><a href="#" class="fa fa-facebook"></a></li>
 				<li><a href="#" class="fa fa-twitter"></a></li>
@@ -54,8 +54,8 @@
 
 		<!-- About Us -->
    		<div class="container">
-			<section class="portfolio"><a name="about"></a> 
-				<h1>About Us</h1>
+			<section class="portfolio">
+				<h1 id="about">About Us</h1>
 				<p>Mobile friendly? Check. Light and fast? Check. Optimized for search engines? Check. Looks and great experience? Check. From the layout design to the behind the scenes, we got you covered.</p>
 			</section>
 		</div>
@@ -63,8 +63,8 @@
 
 		<!-- Our Services -->
 		<div class="container">
-			<section class="portfolio"><a name="services"></a> 
-				<h1>Our Services</h1>
+			<section class="portfolio">
+				<h1 id="services">Our Services</h1>
 
 				<div class="col-services">
 					<h2>Web Development</h2>
@@ -88,11 +88,11 @@
 		<!-- Meet The Team -->
 		<div class="container">
 			<section class="portfolio">
-				<h1>Meet The Team</h1>
+				<h1 id="team">Meet The Team</h1>
 				<div class="owl-carousel owl-theme">			      
 		            <div class="our-team">
 		                <div class="pic">
-		                    <img src="img/team-1.jpg">
+		                    <img src="img/team-1.jpg" alt="team-1">
 		                    <ul class="social">
 		                    	<p class="team-p">This is a profile bio. This is supposed to be a couple of paragraphs about the stylist, their expertises, etc. Not very long, 3 or 4 lines should be sufficient.</p>                    
 		                    </ul>
@@ -104,7 +104,7 @@
 		            </div>    			 
 		            <div class="our-team">
 		                <div class="pic">
-		                    <img src="img/team-2.jpg">
+		                    <img src="img/team-2.jpg" alt="team-2">
 		                    <ul class="social">
 		                    	<p class="team-p">This is a profile bio. This is supposed to be a couple of paragraphs about the stylist, their expertises, etc. Not very long, 3 or 4 lines should be sufficient.</p>	                       
 		                    </ul>
@@ -116,7 +116,7 @@
 		            </div>		       			     
 		            <div class="our-team">
 		                <div class="pic">
-		                    <img src="img/team-3.jpg">
+		                    <img src="img/team-3.jpg" alt="team-3">
 		                    <ul class="social">
 		                    	<p class="team-p">This is a profile bio. This is supposed to be a couple of paragraphs about the stylist, their expertises, etc. Not very long, 3 or 4 lines should be sufficient.</p>
 		                    </ul>
@@ -133,8 +133,8 @@
 
 		<!-- Services and Prices -->
 		<div class="container">
-			<section class="portfolio"><a name="services"></a> 
-					<h1>Services & Prices</h1>
+			<section class="portfolio">
+					<h1 id="prices">Services & Prices</h1>
 					
     				<div id="accordion">
 					  <div class="card">
@@ -186,8 +186,8 @@
 
 
 	<!-- Gallery -->
-	<section class="portfolio"><a name="portfolio"></a> 
-		<h1>Gallery</h1>
+	<section class="portfolio">
+		<h1 id="gallery">Gallery</h1>
 
 		<!-- portfolio item 01 -->
 		<figure class="port-item">
@@ -246,18 +246,18 @@
 	<!-- End Gallery -->
 	
 	<!-- Contact -->
-	<section class="cta"><a name="contact"></a> 
+	<section class="cta">
 		<div class="container">
-			<h1 class="title title-cta">Like what you see?
+			<h1 class="title title-cta" id="contact">Like what you see?
 				<span>Then what are you waiting for?</span>
 			</h1>
 				<form method="post" action="contact-form.php">				
 					<input type="text" placeholder="Your name" required><br>					
 					<input type="email" placeholder="Your email" required><br>				
 					<input type="text" placeholder="Your phone"><br>					
-					<textarea name="" id="" cols="30" rows="10" placeholder="Your message" required></textarea><br>
+					<textarea name="#" id="#" cols="30" rows="10" placeholder="Your message" required></textarea><br>
 					<button type="submit" name="submit" class="button button-dark">Send Message!</button>
-					<a href="" class="button button-dark">Call Us Now!</a>
+					<a href="#" class="button button-dark">Call Us Now!</a>
 				</form>
 		</div>
 	</section>	
@@ -298,7 +298,7 @@
 
 	<script src="C:\Users\Igor\Desktop\Igor\Java\MyProjects\Portfolio Revamp - PHP - Website 2 (Salon Template 1)\OwlCarousel2-2.3.4\docs\assets\vendors\jquery.min.js"></script>
 	<script src="C:\Users\Igor\Desktop\Igor\Java\MyProjects\Portfolio Revamp - PHP - Website 2 (Salon Template 1)\OwlCarousel2-2.3.4\dist\owl.carousel.js"></script>
-	<script type="text/javascript">
+	<script>
 		$('.owl-carousel').owlCarousel({
 		    loop:true,
 		    margin:10,
